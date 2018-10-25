@@ -1,0 +1,20 @@
+# Script to install Apache web server, if not already installed.
+# Ciaran Toman
+# 25/10/2018
+
+
+#!/bin/bash
+
+# 'which' to check path variable for "apache2"
+if ( which apache2 )
+
+	#if found - print statement
+	then echo "Apache web server is already installed"
+	
+	#if not found - update local repo and install apache 
+	else
+	sudo apt-get update && sudo apt-get install apache2 -y
+	
+	#let apache through firewall
+	sudo ufw allow 'Apache Full'
+fi
