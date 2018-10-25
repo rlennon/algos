@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>110</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Minion
+--
+-height: double
+-weight: double
+-nextID: static int
+-id: int
+--
++Minion()
++Minion(h, w)
+--
++getHeight(): double
++getWeight(): double
++getID(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
