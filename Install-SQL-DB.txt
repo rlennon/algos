@@ -1,0 +1,28 @@
+# Script to install SQL server, if not already installed.
+# Ciaran Toman
+# 02/11/2018
+
+
+
+#!/bin/bash
+
+# 'which' to check path variable for "mysql"
+if ( which mysql )
+
+	#if found - print statement
+	then echo "SQL is already installed"
+	
+	#if not found - enable non interactive mode
+	else
+	export DEBIAN_FRONTEND=noninteractive
+
+	#update repo and install sql quitely
+	sudo apt-get update && sudo -E apt-get -q install mysql-server -y
+
+	#secure sql installation
+	#enter new secure password as root
+	#use defaults and allow through mysql port
+	sudo mysql_secure_installation --user root --use-default --port 1433
+
+
+fi
