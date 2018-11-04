@@ -1,0 +1,66 @@
+// Minion Class
+// Ciaran Toman
+// 22/10/2018
+
+
+public class Minion{
+
+	//instance fields
+	private static int nextID = 1;
+	private double height, weight;
+	private int id;
+
+
+	//constructors
+	Minion(){
+		height = 0.0;
+		weight = 0.0;
+		id = nextID++;
+	}
+
+	Minion(height, weight){
+		this.height = height;
+		this.weight = weight;
+		id = nextID++;
+	}
+
+
+	//methods
+	public double getHeight(){
+		return height;
+	}
+
+	public double getWeight(){
+		return weight;
+	}
+
+	public int getID(){
+		return id;
+	}
+
+	public void setHeight(double height){
+		this.height = height;
+	}
+
+	public void setWeight(double weight){
+		this.weight = weight;
+	}
+
+	public String toString(){
+		return "Height =  " + height + "\nWeight = " + weight + "\nID =  " + id;
+	}
+
+	public boolean equals(Object minion){
+		if(minion instanceof Minion){
+			Minion m = (Minion)minion;
+
+			if(this.height == m.getHeight() && this.weight == m.getWeight() 
+					&& this.id == m.getID()){
+				return true;	
+			}
+		}
+		return false;
+	}
+
+
+}
