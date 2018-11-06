@@ -85,74 +85,6 @@
     <coordinates>
       <x>70</x>
       <y>140</y>
-      <w>230</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;210.0;40.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>280</x>
-      <y>160</y>
-      <w>120</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>register</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>380</x>
-      <y>150</y>
-      <w>140</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>380</x>
-      <y>180</y>
-      <w>140</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;includes&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;40.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>500</x>
-      <y>150</y>
-      <w>120</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>enter username</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLUseCase</id>
-    <coordinates>
-      <x>500</x>
-      <y>210</y>
-      <w>120</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>create password</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>70</x>
-      <y>140</y>
       <w>220</w>
       <h>190</h>
     </coordinates>
@@ -226,8 +158,8 @@ by client</panel_attributes>
     <coordinates>
       <x>20</x>
       <y>10</y>
-      <w>940</w>
-      <h>620</h>
+      <w>810</w>
+      <h>600</h>
     </coordinates>
     <panel_attributes>Admin
 halign=left</panel_attributes>
