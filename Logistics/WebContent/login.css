@@ -1,9 +1,15 @@
 @charset "ISO-8859-1"; 
 
-#
- @charset "ISO-8859-1";
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+body{
+	font-family: 'Caveat Brush', cursive;
+}
+
+html{
+	font-family: 'Caveat Brush', cursive;
+}
 
 .login-page {
 	width: 360px;
@@ -26,12 +32,12 @@
 }
 
 .headings {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Caveat Brush', cursive;
 	color: #c428d6;
 }
 
 .form input {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Caveat Brush', cursive;
 	outline: 0;
 	background: #f2f2f2;
 	width: 100%;
@@ -39,11 +45,11 @@
 	margin: 0 0 15px;
 	padding: 15px;
 	box-sizing: border-box;
-	font-size: 14px;
+	font-size: 18px;
 }
 
 .form button {
-	font-family: "Roboto", sans-serif;
+	font-family: 'Caveat Brush', cursive;
 	text-transform: uppercase;
 	outline: 0;
 	background: #4CAF50;
@@ -51,7 +57,7 @@
 	border: 0;
 	padding: 15px;
 	color: #FFFFFF;
-	font-size: 14px;
+	font-size: 24px;
 	-webkit-transition: all 0.3 ease;
 	transition: all 0.3 ease;
 	cursor: pointer;
