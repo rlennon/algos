@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2018 at 03:52 PM
+-- Generation Time: Nov 20, 2018 at 11:01 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.8
 
@@ -55,23 +55,23 @@ INSERT INTO `admins` (`adminNo`, `username`, `password`) VALUES
 --
 
 CREATE TABLE `clients` (
+  `orderID` int(11) NOT NULL,
   `clientNo` int(11) NOT NULL,
   `username` varchar(125) NOT NULL,
-  `password` varchar(125) NOT NULL,
-  `orderID` int(11) NOT NULL
+  `password` varchar(125) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `clients`
 --
 
-INSERT INTO `clients` (`clientNo`, `username`, `password`, `orderID`) VALUES
-(1, 'MaryDoherty', 'algosA', 0),
-(2, 'BarbaraLynch', 'algosB', 0),
-(3, 'JoeMcLaughlin', 'algosC', 0),
-(4, 'EthanDoherty', 'algosD', 0),
-(5, 'JennyHughes', 'algosE', 0),
-(6, 'JoshHegarty', 'algosF', 0);
+INSERT INTO `clients` (`orderID`, `clientNo`, `username`, `password`) VALUES
+(0, 1, 'MaryDoherty', 'algosA'),
+(0, 2, 'BarbaraLynch', 'algosB'),
+(0, 3, 'JoeMcLaughlin', 'algosC'),
+(0, 4, 'EthanDoherty', 'algosD'),
+(0, 5, 'JennyHughes', 'algosE'),
+(0, 6, 'JoshHegarty', 'algosF');
 
 -- --------------------------------------------------------
 
@@ -80,12 +80,13 @@ INSERT INTO `clients` (`clientNo`, `username`, `password`, `orderID`) VALUES
 --
 
 CREATE TABLE `orders` (
-  `noOfEvilMinions` int(11) NOT NULL,
+  `orderID` int(11) NOT NULL,
+  `noOfSmallEvilMinions` int(11) NOT NULL,
+  `noOfBigEvilMinions` int(11) NOT NULL,
   `weightOfRockets` int(11) NOT NULL,
   `noOfTanks` int(11) NOT NULL,
   `noOfTrains` int(11) NOT NULL,
-  `totalCost` int(11) NOT NULL,
-  `orderID` int(11) NOT NULL
+  `totalCost` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
