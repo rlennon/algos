@@ -42,7 +42,7 @@ public class DBConnector {
 	//
 	//create connection method
 	//throw exceptions
-	private static void createConnection() throws LinkageError, ClassNotFoundException, SQLException, Exception{
+	public static void createConnection() throws LinkageError, ClassNotFoundException, SQLException, Exception{
 
 		//register JDBC
 		Class.forName(DRIVER);
@@ -72,7 +72,7 @@ public class DBConnector {
 
 	//close connection method
 	//throws exception
-	private static void closeConnection() throws SQLException {
+	public static void closeConnection() throws SQLException {
 
 		//if there is a connection open
 		//i.e. connection object is NOT null
@@ -87,7 +87,14 @@ public class DBConnector {
 		}
 	}
 
+	
+	//method to return statement object
+	public static Statement getStatement() {
+		
+		return statement;
+	}
 
+	
 	//tester method
 	public static void main(String[] args) {
 
